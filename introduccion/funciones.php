@@ -9,5 +9,27 @@ function bienvenida(){
 
 
 bienvenida();
+echo "<br><br>";
+
+// Funciones con parametros
+
+function saludar($hola){
+
+echo $hola;
+
+}
+
+saludar("Hola a todos");
+echo "<br><br>";
+
+// funciones con retorno
+
+function retorno($retornar){
+
+    return $retornar;
+
+}
+
+echo retorno ("Retornardo funcion");
 
 ?>
