@@ -42,5 +42,6 @@ echo '<br><br>';
 $objeto =(object)["mueble1" => "Armario", "mueble2" => "Escritorio"];
 
 echo $objeto->mueble2;
+echo '<br><br>';
 
 ?>
