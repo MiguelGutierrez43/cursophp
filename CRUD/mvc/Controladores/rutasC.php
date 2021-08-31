@@ -9,16 +9,16 @@ class RutasControlador{
 
     public function Rutas(){
 
-        if(isset($_GET["rutas"])){
+        if(isset($_GET["ruta"])){
 
-            $rutas = $_GET["rutas"];
+            $rutas = $_GET["ruta"];
 
         }else{
 
             $rutas = "index";
         }
 
-        $respuesta = Modelo :: RutasModelo($rutas);
+        $respuesta = Modelo::RutasModelo($rutas);
 
         include $respuesta;
     }
