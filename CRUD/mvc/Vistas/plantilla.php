@@ -20,7 +20,8 @@
 
 <?php
 
-
+	$rutas = new RutasControlador();
+	$rutas -> Rutas();
 
 ?>
 
