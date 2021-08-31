@@ -4,37 +4,25 @@
 	<meta charset="utf-8">
 	<title>CRUD</title>
 
-	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="Vistas/css/estilos.css">
 
 </head>
 
 <body>
 
-<nav>
-	<ul>
-		
-		<li><a href="index.html">Ingresar</a></li>
-		<li><a href="registrar.html">Registrar</a></li>
-		<li><a href="empleados.html">Empleados</a></li>
-		<li><a href="salir.html">Salir</a></li>
+<?php
 
-	</ul>
-</nav>
+	include "modulos/menu.php";
+
+?>
 
 <section>
 
-	<br>
-	<h1>INGRESAR</h1>
+<?php
 
-	<form method="post" action="">
-		
-		<input type="text" placeholder="Usuario" name="usuario" required>
 
-		<input type="password" placeholder="Contraseña" name="clave" required>
 
-		<input type="submit" value="Ingresar">
-
-	</form>
+?>
 
 </section>
 	
