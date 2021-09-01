@@ -6,7 +6,7 @@ class EmpleadosM extends ConexionBD{
 
     static public function RegistrarEmpleadosM($datosC, $tablaBD){
 
-        $pdo = ConexionBD::cBD()->prepared("INSERT INTO $tablaBD (nombre, apellido, email, puesto, salario) VALUES
+        $pdo = ConexionBD::cBD()->prepare("INSERT INTO $tablaBD (nombre, apellido, email, puesto, salario) VALUES
             (:nombre, :apellido, :email, :puesto, :salario)");
 
         $pdo -> bindParam(":nombre", $datosC["nombre"], PDO::PARAM_STR);
