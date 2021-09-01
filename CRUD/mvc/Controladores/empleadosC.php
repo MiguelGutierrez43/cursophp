@@ -6,8 +6,8 @@ class EmpleadosC{
 
         if(isset($_POST["nombreR"])){
 
-            $datosC = array("nombre" => $_POST["nombreR"], "apellido" => $_POST["apellidoR"], "email" => $_POST["emailR"], "
-                puesto" => $_POST["puestoR"], "salario" => $_POST["salarioR"]);
+            $datosC = array("nombre" => $_POST["nombreR"], "apellido" => $_POST["apellidoR"], "email" => $_POST["emailR"], 
+                "puesto" => $_POST["puestoR"], "salario" => $_POST["salarioR"]);
 
             $tablaBD = "empleados";
 
@@ -15,7 +15,7 @@ class EmpleadosC{
 
             if($respuesta == "Bien"){
 
-                header ("location:index.php?ruta=empleados");
+                header("location:index.php?ruta=empleados");
 
             }else{
 
