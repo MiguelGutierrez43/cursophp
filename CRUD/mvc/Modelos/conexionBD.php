@@ -6,7 +6,7 @@
 
             $bd = new PDO("mysql:host=localhost;dbname=crud","root","");
 
-            return $db;
+            return $bd;
 
         }
     }
