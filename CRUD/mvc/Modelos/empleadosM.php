@@ -41,4 +41,19 @@ class EmpleadosM extends ConexionBD{
 
         $pdo -> close();
     }
+
+    // Editar Empleados
+
+    static public function EditarEmpleadoM($datosC, $tablaBD){
+
+        $pdo = ConexionBD::cBD()->prepare("SELECT id, nombre, apellido, email, puesto, salario FROM $tablaBD WHERE $id = :id");
+
+        $pdo -> bindParam(":id", $datosC, PDO::PARAM_INT);
+
+        $pdo -> execute();
+
+        return $pdo -> fetch();
+
+        $pdo -> close();
+    }
 }
