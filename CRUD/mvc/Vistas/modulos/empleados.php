@@ -46,3 +46,8 @@
 
 	</table>
 
+	<?php
+
+		$eliminar = new EmpleadosC();
+		$eliminar -> BorrarEmpleadoC();
+
