@@ -91,6 +91,16 @@ class EmpleadosM extends ConexionBD{
 
         $pdo = ConexionBD::cbd()->prepare("DELETE FROM $tablaBD WHERE id = :id");
 
-        
+        $pdo -> bindParam(":id", $datosC, PDO::PARAM_INT);
+
+        if($pdo -> execute()){
+
+            return "Bien";
+        }else{
+
+            return "Error";
+        }
+
+        $pdo -> close();
     }
 }
